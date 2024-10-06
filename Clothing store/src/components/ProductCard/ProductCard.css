@@ -1,0 +1,91 @@
+.card__container {
+    max-width: 100%;
+}
+
+.card {
+    width: 320px;
+    max-width: 100%;
+    height: 400px;
+    background-color: #f5f6f7;
+    padding: 25px 24px;
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 235px;
+    margin: 25px auto;
+}
+
+.product__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__info span {
+    color: #aa9b77;
+}
+
+.product__option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__size {
+    width: 90px;
+    font-size: 17px;
+    border: 0;
+    cursor: pointer;
+    background: url('./src/assets/img/arrow-down.svg') no-repeat right 15px center;
+    padding: 2px;
+    padding-right: 20px;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.product__size option {
+    margin-right: 10px;
+}
+
+.product__size:focus {
+    outline: 1px solid;
+    border-radius: 5px;
+}
+
+.product__button {
+    background-color: #f5f6f7;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 0.1px solid;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.product__button:hover {
+    color: rgb(0, 187, 255)
+}
+
+.add__info {
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

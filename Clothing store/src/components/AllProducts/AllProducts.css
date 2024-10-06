@@ -1,0 +1,123 @@
+.all__products {
+    width: 100%;
+    margin: 5% 0;
+    color: black;
+    text-align: center;
+}
+
+.all__products__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.all__clothing {
+    display: block;
+}
+
+.men__clothing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.women__clothing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 55px;
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.lane {
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin-left: 5%;
+    background-color: #cccccc;
+}
+
+.women {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.all__products .card__container {
+    width: calc(25% - 15px);
+    margin-right: 20px;
+}
+
+.all__products .card__container:nth-child(4n+1) {
+    margin-right: 0;
+}
+
+.spinner {
+    animation: spinner 1s infinite linear;
+    width: 25px;
+    height: 25px;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Media queries */
+
+@media (max-width: 1101px) {
+    .all__products .card__container {
+        width: calc(33.33333% - 15px);
+    }
+
+    .all__products .card__container:nth-child(4n+1) {
+        margin-right: 20px;
+    }
+
+    .all__products .card__container:nth-child(3n+1) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 860px) {
+    .all__products .card__container {
+        width: calc(50% - 15px);
+    }
+
+    .all__products .card__container:nth-child(3n+1) {
+        margin-right: 20px;
+    }
+
+    .all__products .card__container:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .all__products__title {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .all__products .card__container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .all__products .card__container:nth-child(3n+1) {
+        margin-right: 0;
+    }
+}

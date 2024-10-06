@@ -1,0 +1,60 @@
+.filter__options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    color: black;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.option input[type="checkbox"] {
+    display: none;
+}
+
+.option input[type="checkbox"]+span {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #cccccc;
+    border-radius: 15%;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.option input[type="checkbox"]:checked+span {
+    border-color: #aa9b77;
+}
+
+.option input[type="checkbox"]:checked+span::before {
+    content: "\2713";
+    color: #aa9b77;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+
+/* Media queries */
+@media (max-width: 472px) {
+    .filter__options {
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    .option {
+        flex: 100%;
+        justify-content: center;
+    }
+}

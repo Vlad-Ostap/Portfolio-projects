@@ -1,0 +1,15 @@
+.to__main__link {
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #187552;
+}
+
+.arrow__left {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    fill: #187552;
+}

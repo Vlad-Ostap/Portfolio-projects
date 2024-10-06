@@ -1,0 +1,132 @@
+.basket__card {
+    margin-top: 40px;
+    color: black;
+}
+
+.basket__card__product {
+    display: flex;
+    width: 100%;
+}
+
+.basket__image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.basket__card__image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.basket__card__info {
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.basket__card__title {
+    width: 200px;
+}
+
+.basket__product__name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.basket__product__description {
+    color: #868686;
+    margin-bottom: 12px;
+}
+
+.basket__product__color {
+    margin-bottom: 8px;
+}
+
+.basket__product__size {
+    margin-bottom: 8px;
+}
+
+.product__quantity {
+    display: flex;
+    height: 25px;
+}
+
+.product__quantity__number {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.quantity__img {
+    width: 24px;
+    height: 24px;
+    stroke: #b9b9b9;
+}
+
+.quantity__btn {
+    height: 24px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.product__price {
+    height: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.delete__product__btn {
+    height: 24px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.delete__product__img {
+    width: 25px;
+    height: 25px;
+    fill: #b9b9b9;
+    transition: 0.1s linear;
+}
+
+.delete__product__img:hover {
+    fill: #aa0000;
+}
+
+
+/* Media queries */
+
+@media (max-width: 600px) {
+    .basket__card__product {
+        justify-content: center;
+    }
+
+    .basket__card__title {
+        width: auto;
+    }
+
+    .basket__image__container {
+        width: 180px;
+        height: 240px;
+    }
+
+    .basket__card__info {
+        display: block;
+    }
+
+    .product__quantity {
+        margin: 15px 0;
+    }
+
+    .product__price {
+        margin-right: 10%;
+    }
+}

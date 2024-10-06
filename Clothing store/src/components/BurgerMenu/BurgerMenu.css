@@ -1,0 +1,62 @@
+.burger__button {
+    display: block;
+    width: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    transition: transform 0.2s linear;
+}
+
+.burger__item .before,
+.burger__item .after {
+    position: relative;
+    margin: 0;
+}
+
+.burger__button.active .middle{
+    background: none;
+}
+
+.burger__button.active .before {
+    transform: rotate(45deg) translate(11px);
+    left: -8px;
+    background-color: coral;
+}
+
+.burger__button.active .after {
+    transform: rotate(-45deg) translate(11px);
+    left: -8px;
+    background-color: coral;
+}
+
+.burger__navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: end;
+    background-color: #31344e;
+}
+
+.burger__link {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    transition: 0.1s linear;
+}
+
+.burger__link:hover {
+    color: coral;
+}

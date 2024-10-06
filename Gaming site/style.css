@@ -1,0 +1,1382 @@
+body {
+    margin: 0;
+
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+
+    background-color: #161616;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+/* Container
+=======================*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+/* Header
+=======================*/
+
+.header {
+    background-image: url(image/Soldier.jpg);
+    background-repeat: no-repeat;
+    height: 654px;
+    background-position: -25px -10px;
+}
+
+.header__inner {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 42px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.header__name {
+    margin: 0;
+    line-height: 45px;
+}
+
+.header__name b {
+    color: #ffc600;
+}
+
+.header__nav {
+    margin-top: 40px;
+}
+
+.nav__link {
+    color: #ffc600;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.nav__link:hover {
+    color: #fff;
+    border-bottom: 1px solid #ffc600;
+}
+
+
+/* About Us
+=======================*/
+
+.about__us {
+    padding-top: 37px;
+}
+
+.about__description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__sublime {
+    width: 375px;
+    display: flex;
+    padding-left: 137px;
+    align-items: center;
+}
+
+.description {
+    font-size: 25px;
+    line-height: 33px;
+    color: black;
+}
+
+.about {
+    margin: 0;
+    color: #717171;
+}
+
+.about:first-letter {
+    font-size: 40px;
+}
+
+.sublime {
+    margin: 0;
+    font-size: 60px;
+}
+
+.sublime:first-letter {
+    color: #ffc600;
+}
+
+.sublime:after {
+    content: "";
+    display: block;
+    float: right;
+    margin-top: 11px;
+    width: 120px;
+    height: 1px;
+    background-color: #c5c5c5;
+}
+
+.line {
+    content: "";
+    width: 108px;
+    margin: 0;
+    left: 44.5%;
+    position: absolute;
+    transform: rotate(90deg);
+    height: 1px;
+    background-color: #c5c5c5;
+}
+
+.about__text {
+    padding-left: 220px;
+    width: 68%;
+}
+
+.head__text {
+    color: black;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.main__text {
+    font-size: 12px;
+    color: #717171;
+    padding-right: 40px;
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #717171;
+}
+
+.content__item {
+    width: 235px;
+    text-align: center;
+    margin: 60px 42px;
+}
+
+.content__header {
+    color: black;
+    margin: 16px 0;
+}
+
+.content__main {
+    font-size: 9px;
+    font-style: italic;
+}
+
+.content__main p:first-child {
+    margin-bottom: 12px;
+}
+
+.content__main p:last-child {
+    margin: 0px;
+}
+
+
+/* About Us
+=======================*/
+
+.featured__work {
+    margin-top: 42px;
+    margin-bottom: 18px;
+}
+
+.head {
+    margin: 0 80px;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title b {
+    font-size: 45px;
+}
+
+.title b:first-child {
+    color: #ffc600;
+}
+
+.title:after {
+    content: "";
+    display: block;
+    margin-left: 117px;
+    width: 140px;
+    height: 1px;
+    background-color: #c5c5c5;
+}
+
+.work__nav a:first-child {
+    padding-right: 30px;
+}
+
+.work__link {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+.work__link:last-child {
+    padding: 0px;
+}
+
+.work__link:hover {
+    text-decoration: underline solid #ffc600;
+    cursor: pointer;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game__card {
+    position: relative;
+    height: 267px;
+    width: 25%;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.game__item {
+    position: absolute;
+    left: 50%;
+
+    transform: translate(-50%, 0)
+}
+
+
+/* Strategy
+=======================*/
+
+.strategy {
+    margin: 42px 80px 65px 80px;
+}
+
+.strategy .head {
+    margin: 0 0 45px 0;
+}
+
+.process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.process__card {
+    display: flex;
+    width: 860px;
+}
+
+.process__content {
+    height: 288px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.process__text {
+    height: 288px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.visible {
+    overflow: visible;
+}
+
+.visible .strategy__text {
+    width: 119.5%;
+}
+
+.process__text .strategy__text {
+    position: relative;
+    left: 35px;
+    top: 20px;
+    margin-right: 20px;
+}
+
+.process__image {
+    position: relative;
+    float: right;
+    right: -52px;
+    top: -30px;
+}
+
+.part_2 .process__image {
+    right: -94px;
+}
+
+.part_3 .process__image {
+    right: -7px;
+}
+
+.part_2 .title {
+    margin: 20px 0 50px 0;
+}
+
+.part_2 .head__text {
+    padding-right: 50px;
+}
+
+.part_3 .title {
+    margin: 70px 0 25px 0;
+}
+
+.part_3 .head__text {
+    padding-right: 50px;
+}
+
+.strategy__text .part_3 {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    margin-right: 20px;
+}
+
+.strategy__text .title:after {
+    content: none;
+}
+
+.strategy__text .title b {
+    color: black;
+}
+
+
+/* Serices Provided
+=======================*/
+
+.serices__provided {
+    background-image: url(image/serices-background/Jocker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 478px;
+}
+
+.serices__provided .head {
+    padding-top: 35px;
+    margin-left: 60px;
+    color: #fff;
+}
+
+.serices__provided .title:after {
+    margin-left: 111px;
+    width: 135px;
+}
+
+.about__services {
+    width: 540px;
+    height: 287px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40%;
+}
+
+.service {
+    color: #fff;
+    width: 40%;
+    margin-bottom: 45px;
+}
+
+.service .content__header {
+    color: #fff;
+    margin: 30px 0 25px 0;
+}
+
+
+/* Team
+=======================*/
+
+.team {
+    margin-top: 85px;
+    height: 485px;
+}
+
+.team .about__sublime {
+    padding-left: 50px;
+    width: 206px;
+}
+
+.team .main__text {
+    padding-right: 0;
+}
+
+.team .title:after {
+    margin-left: 68px;
+    width: 86px;
+    height: 0.5px;
+}
+
+.team .about__text {
+    padding-left: 150px;
+    width: 65%;
+}
+
+.team__cards {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-top: 20px;
+}
+
+.about__team {
+    margin-right: 20px;
+}
+
+.about__team:last-child {
+    margin-right: 60px;
+}
+
+.team__photo {
+    margin-bottom: 10px;
+}
+
+.team__text {
+    text-align: center;
+}
+
+.profession {
+    color: black;
+    font-style: italic;
+    margin-top: 0;
+}
+
+
+/* Testimonials
+=======================*/
+.testimonials {
+    background-color: black;
+    color: #fff;
+    padding-top: 40px;
+    height: 390px;
+}
+
+.testimonials .title:after {
+    margin-left: 92px;
+    width: 90px;
+}
+
+.testimonials .about__sublime {
+    padding-left: 50px;
+}
+
+.testimonials .about__text {
+    width: 60%;
+    padding: 40px 0 0 95px;
+}
+
+.testimonials .head__text {
+    color: #fff;
+}
+
+.testimonials .main__text {
+    color: #fff;
+    padding-right: 0;
+}
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonial__card {
+    margin-left: 50px;
+}
+
+.testimonial__card .team__photo {
+    border-radius: 50%;
+    border: 4px solid #ffa800;
+}
+
+.testimonial__card .testimonial__photo {
+    border-radius: 50%;
+}
+
+
+/* Blog
+=======================*/
+.blog {
+    margin-top: 40px;
+    display: flex;
+    height: 483px;
+}
+
+.menu__block {
+    display: flex;
+    flex-wrap: wrap;
+    height: 570px;
+    width: 320px;
+    margin-top: -70px;
+    font-weight: 600;
+}
+
+.blog .title:after {
+    margin-left: 4px;
+    width: 89px;
+}
+
+.blog .about__sublime {
+    padding-left: 50px;
+    width: 138px;
+}
+
+.blog__menu {
+    width: 320px;
+    margin-top: -45px;
+}
+
+.menu__link {
+    display: block;
+    margin: 20px 0 0 140px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu__link:first-child {
+    margin-top: 0;
+}
+
+.menu__link:hover {
+    color: #ffc600;
+}
+
+.blog__cards {
+    margin: -10px 0 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    ;
+    width: 100%;
+}
+
+.about__blog {
+    margin-right: 100px;
+    width: 22%;
+}
+
+.about__blog:last-child {
+    margin-right: 60px;
+}
+
+.blog__photo {
+    height: 206px;
+    width: 180px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.blog__data {
+    font-size: 16px;
+    color: #ffc600;
+    margin-top: 7px;
+}
+
+.about__blog .content__header {
+    font-size: 13px;
+    margin: 16px 0 13px 0;
+}
+
+.about__blog .content__main {
+    font-size: 11px;
+    width: 180px;
+}
+
+
+/* Contact
+=======================*/
+.contact {
+    height: 585px;
+    display: flex;
+    background-color: #d3d3d3;
+    color: #fff;
+}
+
+.contact__map {
+    width: 50%;
+    background-image: url(image/contact/Layer%2052.jpg);
+    background-position: -102px -51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map__button {
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #f2a40e;
+}
+
+.map__button .title {
+    margin-top: 22px;
+}
+
+.map__button .title b {
+    font-size: 13px;
+}
+
+.map__button .title:after {
+    content: none;
+}
+
+.contact__block {
+    width: 70%;
+    background-color: #2046b3;
+}
+
+.contact__menu {
+    max-width: 370px;
+    margin: 40px 0 0 65px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.contact__menu .title:after {
+    width: 48%;
+    margin-left: 7px;
+}
+
+.input__field {
+    background-color: #2046b3;
+    border: 2px solid #c5c5c5;
+    padding: 5px 0 5px 10px;
+}
+
+.input__field::placeholder {
+    width: 100%;
+    color: #fff;
+}
+
+#name {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#mobile {
+    width: 40%;
+    border-bottom-width: 3px;
+}
+
+#em {
+    float: right;
+    border-bottom-width: 3px;
+}
+
+#mes {
+    width: 100%;
+    height: 62px;
+    margin-top: 10px;
+    resize: none;
+}
+
+.contact__button {
+    background-color: #ffc600;
+    border: none;
+    width: 90px;
+    height: 27px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.contact__button:hover {
+    background-color: #d9a800;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.location {
+    margin: 50px 0 50px 20px;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.location p:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.location p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.location span {
+    font-size: 10px;
+}
+
+.word__spacing_1 {
+    margin-left: 14px;
+}
+
+.word__spacing_2 {
+    margin-left: 26px;
+}
+
+.word__spacing_3 {
+    margin-left: 31px;
+}
+
+.contact__links {
+    display: flex;
+    margin: 7px 0 0 87px;
+}
+
+.social__link {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #dedfe0;
+    text-align: center;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__link:hover {
+    background-color: #abaeb3;
+}
+
+.link {
+    height: 10px;
+    width: 10px;
+}
+
+
+/* Main Screen Layout
+=======================*/
+.main__screen {
+    height: 654px;
+    margin-top: 65px;
+    display: flex;
+}
+
+.main__left {
+    width: 26.7%;
+    background-color: black;
+}
+
+.main__menu {
+    margin: 120px 0 0 25px;
+}
+
+.main__menu .about__sublime {
+    padding: 0;
+    color: #fff;
+}
+
+.main__menu .title:after {
+    content: none;
+}
+
+.main__menu .title {
+    font-size: 50px;
+}
+
+.main__menu .title b {
+    font-size: 50px;
+}
+
+.main__links {
+    border-bottom: 2px solid #ffc600;
+    width: 42%;
+}
+
+.main__links .menu__link {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0 0 0;
+}
+
+.main__links .menu__link:last-child {
+    margin-bottom: 45px;
+}
+
+.main__links .menu__link:hover {
+    color: #ffc600;
+}
+
+.main__left .contact__links {
+    margin: 13px 0 0 25px;
+}
+
+.main__left .link {
+    color: black;
+}
+
+.main__right {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+.main__image {
+    opacity: 22%;
+}
+
+.main__right .header__name {
+    position: absolute;
+    top: 360px;
+    left: 20px;
+    font-size: 95px;
+    color: #fff;
+    line-height: 78px;
+}
+
+
+/* Media
+=======================*/
+
+@media (max-width: 1200px) {
+
+    /* header */
+    .header {
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    /* About Us */
+    .line {
+        display: none;
+    }
+
+    .about__text {
+        padding-left: 100px;
+        width: 60%;
+    }
+
+    /* strategy */
+    .visible .strategy__text {
+        width: 90%;
+    }
+
+    /* blog */
+    .menu__block {
+        width: 220px;
+    }
+
+    .menu__link {
+        margin-left: 50px;
+    }
+
+    .blog__cards {
+        margin: 0;
+    }
+
+    .about__blog {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Main Scree Layout */
+    .main__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    /* About Us */
+    .about__sublime {
+        padding-left: 100px;
+    }
+
+    .about__text {
+        padding-left: 100px;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .sublime:after {
+        margin-right: 40px;
+    }
+
+    .content__item {
+        margin: 60px 20px 10px;
+    }
+
+    /* strategy */
+    .process__content .strategy__text {
+        top: 0px;
+        width: 90%;
+    }
+
+    .part_2 .title {
+        margin: 20px 0;
+    }
+
+    .part_3 .title {
+        margin: 20px 0;
+    }
+
+    .process__card {
+        width: 750px;
+    }
+
+    /* serices__provided */
+    .about__services {
+        margin: 0px;
+        position: relative;
+        justify-content: center;
+    }
+
+    /* team */
+    .team {
+        margin-top: 25px;
+        height: auto;
+    }
+
+    .team .about__text {
+        padding-left: 50px;
+    }
+
+    .team__cards {
+        float: none;
+        position: relative;
+        justify-content: center;
+    }
+
+    .about__team {
+        margin: 0 0 20px 0;
+        text-align: center;
+        width: 34%;
+    }
+
+    .about__team:last-child {
+        margin-right: 0;
+    }
+
+    /* testimonials */
+    .testimonials .about__text {
+        padding: 10px 0 0 50px;
+    }
+
+    /* blog */
+    .blog {
+        height: auto;
+    }
+
+    .menu__block {
+        height: 460px;
+    }
+
+    .blog__cards {
+        margin: 0 0 30px 0;
+    }
+
+    .about__blog {
+        width: 183px;
+    }
+
+    .about__blog:last-child {
+        margin-right: auto;
+    }
+
+    /* Main Scree Layout */
+    .main__right .header__name {
+        font-size: 65px;
+    }
+
+    .main__screen {
+        height: 500px;
+        margin-top: 45px;
+    }
+
+    .main__menu {
+        margin: 40px 0 0 25px;
+    }
+
+    .main__right .header__name {
+        top: 270px;
+    }
+
+    .main__menu .title {
+        font-size: 30px;
+    }
+
+    .main__menu .title b {
+        font-size: 35px;
+    }
+
+    .main__links {
+        width: 70%;
+    }
+
+    .main__links .menu__link {
+        font-size: 13px;
+    }
+
+    .main__links .menu__link:last-child {
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    /* header */
+    .header {
+        height: 455px;
+    }
+
+    .header__name {
+        font-size: 40px;
+    }
+
+    .header__nav {
+        margin-top: 10px;
+    }
+
+    /* About Us */
+    .description {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about {
+        margin-right: 10px;
+    }
+
+    .sublime {
+        font-size: 40px;
+    }
+
+    .sublime:after {
+        content: none;
+    }
+
+    /* featured__work */
+    .game__card {
+        width: 50%;
+    }
+
+    .title:after {
+        content: none;
+    }
+
+    /* strategy */
+    .process {
+        display: block;
+        text-align: center;
+    }
+
+    .process__content {
+        display: none;
+    }
+
+    .process__text {
+        width: 100%;
+        height: 190px;
+    }
+
+    .process__text .strategy__text {
+        position: static;
+        margin: 0px;
+    }
+
+    .visible .strategy__text {
+        width: 100%;
+    }
+
+    .strategy__text .main__text {
+        padding: 0px;
+    }
+
+    .process__card {
+        width: 100%;
+    }
+
+    .part_2 .head__text {
+        padding-right: 0px;
+    }
+
+    .part_3 .head__text {
+        padding-right: 0px;
+    }
+
+    /* serices__provided */
+    .serices__provided {
+        height: 400px;
+    }
+
+    .service .content__header {
+        margin: 10px 0 15px 0;
+    }
+
+    /* team */
+    .team .about__text {
+        width: 90%;
+        margin-top: 7px;
+    }
+
+    /* testimonials */
+    .testimonials {
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    /* blog */
+    .about__blog:last-child {
+        margin-top: 25px;
+    }
+
+    /* contact */
+    .contact {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .contact__map {
+        width: 100%;
+        height: 120px;
+    }
+
+    .contact__block {
+        width: 100%;
+    }
+
+    .contact__links {
+        margin-bottom: 20px;
+    }
+
+    .contact__menu {
+        margin: 20px auto 0 auto;
+    }
+
+    .contact__links {
+        display: flex;
+        width: 63px;
+        margin: 7px auto 15px auto;
+    }
+
+    /* Main Scree Layout */
+
+    .main__screen {
+        height: 450px;
+    }
+
+    .main__right .header__name {
+        font-size: 45px;
+    }
+
+    .main__menu {
+        margin: 15px 0 0 15px;
+    }
+
+    .main__menu .title {
+        margin-bottom: 0;
+    }
+
+    .main__links .menu__link {
+        font-size: 12.2px;
+    }
+
+    .main__right .header__name {
+        top: 190px;
+        line-height: 68px;
+    }
+
+}
+
+@media (max-width: 586px) {
+
+    /* about__us */
+    .about__sublime {
+        padding-left: 40px;
+    }
+
+    .about__text {
+        padding-left: 40px;
+    }
+
+    /* featured__work */
+    .work__link {
+        width: 40%;
+        display: inline-flex;
+    }
+
+    .game__card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .game__item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* strategy */
+    .strategy {
+        margin: 42px 40px 10px;
+    }
+
+    .process__text {
+        height: 240px;
+    }
+
+    .strategy__text .title {
+        margin: 20px 0 10px 0;
+    }
+
+    .part_2 .process__text {
+        height: 190px;
+    }
+
+    /* serices__provided */
+    .about__services {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .service {
+        width: 77%;
+        margin-bottom: 35px;
+    }
+
+    .service .content__header {
+        margin-bottom: 10px;
+    }
+
+    .serices__provided {
+        background-position: 50%;
+        height: auto;
+    }
+
+    /* team */
+    .about__team {
+        width: 51%;
+    }
+
+    /* testimonials */
+    .testimonials .about__text {
+        width: 90%;
+        margin: 0 0 20px 0;
+    }
+
+    .testimonial__card {
+        margin: 0 auto 0 auto;
+    }
+
+    /* blog */
+    .blog {
+        display: block;
+    }
+
+    .menu__block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__blog {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about__blog:nth-child(2) {
+        margin-top: 25px;
+    }
+
+    .blog__photo {
+        margin: 0 auto;
+    }
+
+    .about__blog .content__main {
+        margin: 0 auto;
+    }
+
+    .blog__cards {
+        transform: translateY(-20px)
+    }
+
+    /* contact */
+    .contact__menu {
+        max-width: 300px;
+    }
+
+    .contact__button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #name {
+        margin-bottom: 10px;
+    }
+
+    #mobile {
+        width: 100%;
+    }
+
+    #em {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+
+    /* Main Scree Layout */
+    .main__screen {
+        flex-wrap: wrap;
+    }
+
+    .main__left {
+        width: 100%;
+    }
+
+    .about__sublime {
+        width: auto;
+    }
+
+    .main__menu {
+        margin-left: 0;
+    }
+
+    .main__menu .title {
+        margin: 0 auto;
+    }
+
+    .main__links {
+        width: 25%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main__left .contact__links {
+        margin: 13px auto;
+    }
+
+    .main__right {
+        height: 500px;
+    }
+
+    .main__right .header__name {
+        top: 150px;
+        text-align: center;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+}
