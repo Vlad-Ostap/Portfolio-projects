@@ -4,7 +4,7 @@ import clothingStoreApi from './ClothingStore/server/server-deploy.js';
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use('/ClothingStore/get-data', clothingStoreApi);
 app.use('/ClothingStore', express.static(path.join(process.cwd(), './ClothingStore/dist')));
@@ -23,5 +23,5 @@ app.get('/GamingSite', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on ${PORT} port`)
+    console.log(`Server running on port ${PORT}`)
 });
