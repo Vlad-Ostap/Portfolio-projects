@@ -18,7 +18,7 @@ const AllProducts = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch('/get-data')
+        fetch('/ClothingStore/get-data')
             .then(res => res.json())
             .then(data => {
                 setMenClothing(data.menClothing);

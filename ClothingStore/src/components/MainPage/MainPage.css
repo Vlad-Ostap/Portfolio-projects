@@ -1,8 +1,8 @@
 .main__page {
     position: relative;
     width: 100%;
-    height: 790px;
-    background: url('../../assets/img/Livello 1.jpg') center no-repeat;
+    height: 100vh;
+    background: url('/img/Livello 1.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -47,6 +47,7 @@
     height: 80px;
     top: 0;
     z-index: 1000;
+    transition: all 0.1s linear;
 }
 
 .navbar.fixed {

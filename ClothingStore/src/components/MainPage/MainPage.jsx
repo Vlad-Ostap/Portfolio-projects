@@ -42,7 +42,7 @@ const MainPage = () => {
                     <div className='navbar' ref={navbarRef}>
                         <div className='navbar__content'>
                             <Link className='logo' to='/'>
-                                <img className='logo' src="./src/assets/img/logo.svg" alt="" />
+                                <img className='logo' src="/ClothingStore/img/logo.svg" alt="" />
                             </Link>
                             <nav className='nav' style={burgerMenu ? { justifyContent: 'end' } : { justifyContent: 'space-between' }}>
                                 {

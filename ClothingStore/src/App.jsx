@@ -7,12 +7,12 @@ import './App.css';
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/ClothingStore'>
       <div className='app'>
         <Routes>
           <Route path='/' element={<MainLayout />} />
           <Route path='basket' element={<Basket />} />
-          <Route path='all-products'element={<AllProducts />}/>
+          <Route path='all-products' element={<AllProducts />} />
         </Routes>
       </div>
     </BrowserRouter>

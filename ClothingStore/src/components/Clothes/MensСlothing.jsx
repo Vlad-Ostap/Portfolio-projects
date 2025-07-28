@@ -7,14 +7,14 @@ import './Clothes.css';
 
 const fetcher = url => fetch(url).then(res => res.json())
 
-const WomensClothing = () => {
-    const { data, error } = useSWR('/get-data', fetcher);
-    const [womenClothing, setWomenClothing] = useState([]);
-    const { scrollBar, numScroll, sumScroll, isScrolling, scrollLeft, scrollRight } = useScroll(womenClothing.length);
+const MensClothing = () => {
+    const { data, error } = useSWR('/ClothingStore/get-data', fetcher);
+    const [menClothing, setMenClothing] = useState([]);
+    const { scrollBar, numScroll, sumScroll, isScrolling, scrollLeft, scrollRight } = useScroll(menClothing.length);
 
     useEffect(() => {
         if (data) {
-            setWomenClothing(data.womenClothing);
+            setMenClothing(data.menClothing);
         }
     }, [data]);
 
@@ -22,11 +22,11 @@ const WomensClothing = () => {
         <div className="container">
             <div className="clothes">
                 <div className="title">
-                    <div className="lane women"></div>
-                    <p>women</p>
+                    <p>men</p>
+                    <div className="lane"></div>
                 </div>
                 {!data ? <ImSpinner className="spinner" /> : <>
-                    <div className='scroll__buttons'>
+                    <div className='scroll__buttons men'>
                         <p className='scroll__number'>{`${numScroll}/${sumScroll}`}</p>
                         <button className='scroll__button' onClick={scrollLeft} disabled={isScrolling || numScroll === 1}>
                             <svg className='scroll__img'>
@@ -41,7 +41,7 @@ const WomensClothing = () => {
                         </button>
                     </div>
                     <div ref={scrollBar} className='product__container'>
-                        {womenClothing.map(card => {
+                        {menClothing.map(card => {
                             return <ProductCard {...card} key={card.id} />
                         })}
                     </div>
@@ -51,4 +51,4 @@ const WomensClothing = () => {
     )
 }
 
-export default WomensClothing;
+export default MensClothing;

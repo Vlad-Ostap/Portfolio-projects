@@ -43,7 +43,7 @@
     font-size: 17px;
     border: 0;
     cursor: pointer;
-    background: url('./src/assets/img/arrow-down.svg') no-repeat right 15px center;
+    background: url('/img/arrow-down.svg') no-repeat right 15px center;
     padding: 2px;
     padding-right: 20px;
 
