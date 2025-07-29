@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import path from 'path';
 import clothingStoreApi from './ClothingStore/server/server-deploy.js';
 
@@ -6,10 +7,12 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+app.use(cors());
+
 app.use('/ClothingStore/get-data', clothingStoreApi);
 app.use('/ClothingStore', express.static(path.join(process.cwd(), './ClothingStore/dist')));
 app.get('/ClothingStore/{*splat}', (req, res) => {
-  res.sendFile(path.join(process.cwd(), './ClothingStore/dist/index.html'));
+    res.sendFile(path.join(process.cwd(), './ClothingStore/dist/index.html'));
 });
 
 app.use('/FlexiCube', express.static(path.join(process.cwd(), './FlexiCube')));
