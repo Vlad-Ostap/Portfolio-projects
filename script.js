@@ -11,6 +11,11 @@ app.use(cors());
 
 app.use('/ClothingStore/get-data', clothingStoreApi);
 app.use('/ClothingStore', express.static(path.join(process.cwd(), './ClothingStore/dist')));
+
+app.get('/', (req, res) => {
+    res.redirect('https://vlad-ostap.github.io/#/projects');
+});
+
 app.get('/ClothingStore/{*splat}', (req, res) => {
     res.sendFile(path.join(process.cwd(), './ClothingStore/dist/index.html'));
 });
@@ -23,6 +28,10 @@ app.get('/FlexiCube', (req, res) => {
 app.use('/GamingSite', express.static(path.join(process.cwd(), './GamingSite')));
 app.get('/GamingSite', (req, res) => {
     res.sendFile(path.join(process.cwd(), './GamingSite/index.html'));
+});
+
+app.use((req, res) => {
+  res.redirect('https://vlad-ostap.github.io/#/projects');
 });
 
 app.listen(PORT, () => {
