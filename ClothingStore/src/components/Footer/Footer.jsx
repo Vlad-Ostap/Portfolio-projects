@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
-    const scrollToAbout = () => {
-        const aboutUs = document.querySelector('.about__container');
-        aboutUs.scrollIntoView({
+    const scrollToContent = (e) => {
+        const selector = e.currentTarget.dataset.scroll;
+        const section = document.querySelector(selector);
+
+        section.scrollIntoView({
             behavior: 'smooth',
             block: 'center'
         });
@@ -22,10 +24,10 @@ const Footer = () => {
                     </div>
                     <div className='footer__navigation'>
                         <nav className='footer__menu'>
-                            <Link className='footer__link'>credits</Link>
-                            <Link className='footer__link'>privacy</Link>
-                            <p className='footer__link' onClick={scrollToAbout}>about</p>
-                            <Link className='footer__link'>contact</Link>
+                            <p className='footer__link' data-scroll='.main__page__text' onClick={scrollToContent}>Home</p>
+                            <p className='footer__link' data-scroll='.clothes' onClick={scrollToContent}>Products</p>
+                            <p className='footer__link' data-scroll='.about__container' onClick={scrollToContent}>About</p>
+                            <Link to='ClothingStore/basket' className='footer__link'>Cart</Link>
                         </nav>
                         <p className='footer__author'>Design by gianluca cosetta</p>
                     </div>

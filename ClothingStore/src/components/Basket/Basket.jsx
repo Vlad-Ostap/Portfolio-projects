@@ -29,12 +29,12 @@ const Basket = () => {
                     <div className='basket__menu'>
                         <BackToMainLink />
                         <div className='basket__title'>
-                            <p>Basket</p>
+                            <p>Cart</p>
                             <button className='clear__basket__button' onClick={handleClearBasket}>
                                 <svg className='clear__basket__img'>
                                     <use href='#clear-basket'></use>
                                 </svg>
-                                <p className='clear__basket__text'>empty trash</p>
+                                <p className='clear__basket__text'>Clear Cart</p>
                             </button>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const Basket = () => {
                 </div>
                 <div className='basket__info'>
                     <div className='basket__product__quantity'>
-                        Number of goods
+                        Number of items
                         <span>{basketList.length} pcs.</span>
                     </div>
                     <span className='line'></span>

@@ -54,8 +54,8 @@ export const womenClothing =
     [
         {
             id: 'women_1',
-            img: '/ClothingStore/img/woman/giacket.png',
-            name: 'giacket',
+            img: '/ClothingStore/img/woman/jacket.png',
+            name: 'jacket',
             startPrice: 60.00,
             sizes: ['small', 'medium', 'large'],
             quantity: 6
@@ -78,8 +78,8 @@ export const womenClothing =
         },
         {
             id: 'women_4',
-            img: '/ClothingStore/img/woman/giacket.png',
-            name: 'giacket',
+            img: '/ClothingStore/img/woman/jacket.png',
+            name: 'jacket',
             startPrice: 60.00,
             sizes: ['small', 'medium', 'large'],
             quantity: 6

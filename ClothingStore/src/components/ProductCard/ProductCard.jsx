@@ -45,7 +45,7 @@ const ProductCard = (props) => {
                         })}
                     </select>
 
-                    <button className='product__button' onClick={handleAddToBasket}>Add to basket</button>
+                    <button className='product__button' onClick={handleAddToBasket}>Add to cart</button>
                 </div>
 
                 <div className="product__img">

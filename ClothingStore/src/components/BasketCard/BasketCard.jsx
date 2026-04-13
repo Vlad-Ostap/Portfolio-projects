@@ -27,7 +27,6 @@ const BasketCard = ({ id, img, name, finalPrice, selectedSize, productNum }) => 
                     <div className='basket__card__title'>
                         <p className='basket__product__name'>{name}</p>
                         <p className='basket__product__description'>Some description about product</p>
-                        <p className='basket__product__color'>wdadadw</p>
                         <p className='basket__product__size'>{selectedSize}</p>
                     </div>
                     <div className='product__quantity'>
