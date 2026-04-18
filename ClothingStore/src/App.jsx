@@ -7,7 +7,7 @@ import './App.css';
 const App = () => {
 
   return (
-    <BrowserRouter basename='/ClothingStore'>
+    <BrowserRouter basename='/'>
       <div className='app'>
         <Routes>
           <Route path='/' element={<MainLayout />} />

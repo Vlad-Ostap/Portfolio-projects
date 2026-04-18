@@ -8,7 +8,7 @@ import './Clothes.css';
 const fetcher = url => fetch(url).then(res => res.json())
 
 const MensClothing = () => {
-    const { data, error } = useSWR('/ClothingStore/get-data', fetcher);
+    const { data, error } = useSWR('/api/get-data', fetcher);
     const [menClothing, setMenClothing] = useState([]);
     const { scrollBar, numScroll, sumScroll, isScrolling, scrollLeft, scrollRight } = useScroll(menClothing.length);
 
