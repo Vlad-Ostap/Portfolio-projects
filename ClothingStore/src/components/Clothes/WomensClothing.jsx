@@ -13,10 +13,58 @@ const WomensClothing = () => {
     const { scrollBar, numScroll, sumScroll, isScrolling, scrollLeft, scrollRight } = useScroll(womenClothing.length);
 
     useEffect(() => {
-        if (data) {
-            setWomenClothing(data.womenClothing);
+            setWomenClothing([
+        {
+            id: 'women_1',
+            img: '/img/woman/jacket.png',
+            name: 'jacket',
+            startPrice: 60.00,
+            sizes: ['small', 'medium', 'large'],
+            quantity: 6
+        },
+        {
+            id: 'women_2',
+            img: '/img/woman/trekking shoes.png',
+            name: 'trekking shoes',
+            startPrice: 80.00,
+            sizes: ['small', 'large'],
+            quantity: 3
+        },
+        {
+            id: 'women_3',
+            img: '/img/woman/t-shirt.png',
+            name: 't-shirt',
+            startPrice: 20.00,
+            sizes: ['small', 'medium', 'large'],
+            quantity: 4
+        },
+        {
+            id: 'women_4',
+            img: '/img/woman/jacket.png',
+            name: 'jacket',
+            startPrice: 60.00,
+            sizes: ['small', 'medium', 'large'],
+            quantity: 6
+        },
+        {
+            id: 'women_5',
+            img: '/img/woman/trekking shoes.png',
+            name: 'trekking shoes',
+            startPrice: 80.00,
+            sizes: ['small', 'large'],
+            quantity: 3
+        },
+        {
+            id: 'women_6',
+            img: '/img/woman/t-shirt.png',
+            name: 't-shirt',
+            startPrice: 20.00,
+            sizes: ['small', 'medium', 'large'],
+            quantity: 4
         }
-    }, [data]);
+    ]);
+        }, []
+    );
 
     return (
         <div className="container">
@@ -25,16 +73,16 @@ const WomensClothing = () => {
                     <div className="lane women"></div>
                     <p>women</p>
                 </div>
-                {!data ? <ImSpinner className="spinner" /> : <>
+                {<>
                     <div className='scroll__buttons'>
                         <p className='scroll__number'>{`${numScroll}/${sumScroll}`}</p>
-                        <button className='scroll__button' onClick={scrollLeft} disabled={isScrolling || numScroll === 1}>
+                        <button className='scroll__button' onClick={scrollLeft} disabled={isScrolling}>
                             <svg className='scroll__img'>
                                 <use href='#arrow-left-scroll'></use>
                             </svg>
                         </button>
 
-                        <button className='scroll__button' onClick={scrollRight} disabled={isScrolling || numScroll === sumScroll}>
+                        <button className='scroll__button' onClick={scrollRight} disabled={isScrolling}>
                             <svg className='scroll__img'>
                                 <use href='#arrow-right-scroll'></use>
                             </svg>

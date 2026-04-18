@@ -13,21 +13,29 @@ function useScroll(length) {
 
         setIsScrolling(true);
 
-        const cardWidth = scrollBar.current.children[0].offsetWidth;
-        const gap = parseFloat(getComputedStyle(scrollBar.current).gap);
+        const container = scrollBar.current;
+        const cardWidth = container.children[0].offsetWidth;
+        const gap = parseFloat(getComputedStyle(container).gap);
 
-        scrollBar.current.scrollBy({
-            left: -(cardWidth + gap),
-            behavior: 'smooth'
-        });
+        if (numScroll > 1) {
+            container.scrollBy({
+                left: -(cardWidth + gap),
+                behavior: 'smooth'
+            });
 
-        setNumScroll(prev =>
-            prev > 1 ? prev - 1 : sumScroll
-        );
+            setNumScroll(prev => prev - 1);
+        } else {
+            container.scrollTo({
+                left: container.scrollWidth,
+                behavior: 'smooth'
+            });
+
+            setNumScroll(sumScroll);
+        }
 
         setTimeout(() => {
             setIsScrolling(false);
-        }, 500);
+        }, 300);
     };
 
     const scrollRight = () => {
@@ -35,21 +43,29 @@ function useScroll(length) {
 
         setIsScrolling(true);
 
-        const cardWidth = scrollBar.current.children[0].offsetWidth;
-        const gap = parseFloat(getComputedStyle(scrollBar.current).gap);
+        const container = scrollBar.current;
+        const cardWidth = container.children[0].offsetWidth;
+        const gap = parseFloat(getComputedStyle(container).gap);
 
-        scrollBar.current.scrollBy({
-            left: cardWidth + gap,
-            behavior: 'smooth'
-        });
+        if (numScroll < sumScroll) {
+            container.scrollBy({
+                left: cardWidth + gap,
+                behavior: 'smooth'
+            });
 
-        setNumScroll(prev =>
-            prev < sumScroll ? prev + 1 : 1
-        );
+            setNumScroll(prev => prev + 1);
+        } else {
+            container.scrollTo({
+                left: 0,
+                behavior: 'smooth'
+            });
+
+            setNumScroll(1);
+        }
 
         setTimeout(() => {
             setIsScrolling(false);
-        }, 500);
+        }, 300);
     };
 
     return {
